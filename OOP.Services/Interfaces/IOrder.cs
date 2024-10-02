@@ -1,5 +1,5 @@
-﻿namespace OnlineStore.Interfaces;
-using OnlineStore.Implementations;
+﻿namespace Services.Interfaces;
+using Services.Implementations;
 
 public interface IOrder
 {

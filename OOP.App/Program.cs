@@ -1,5 +1,7 @@
-﻿using OnlineStore.Interfaces;
-using OnlineStore.Implementations;
+﻿using Services.Implementations;
+using Services.Interfaces;
+
+namespace OOP;
 public class Program
 {
     public static void Main()

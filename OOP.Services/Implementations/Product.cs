@@ -1,4 +1,4 @@
-﻿namespace OnlineStore.Implementations;
+﻿namespace Services.Implementations;
 
 public abstract class Product
 {

@@ -1,4 +1,4 @@
-﻿namespace OnlineStore.Implementations;
+﻿namespace Services.Implementations;
 public class PhysicalProduct
 {
     public PhysicalProduct(string name, decimal price, int quantity)

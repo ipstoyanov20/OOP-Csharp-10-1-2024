@@ -1,5 +1,6 @@
-﻿namespace OnlineStore.Implementations;
-using OnlineStore.Interfaces;
+﻿namespace Services.Implementations;
+
+using Services.Interfaces;
 
 public class Customer : ICustomer
 {

@@ -1,5 +1,4 @@
-﻿namespace OnlineStore.Implementations;
-
+﻿namespace Services.Implementations;
 public class DigitalOrder : Order
 {
     public override void CompleteOrder()

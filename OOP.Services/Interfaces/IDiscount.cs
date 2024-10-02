@@ -1,4 +1,4 @@
-﻿namespace OnlineStore.Interfaces;
+﻿namespace Services.Interfaces;
 
 
 public interface IDiscount
