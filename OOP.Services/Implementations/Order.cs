@@ -2,6 +2,7 @@
 using Services.Interfaces;
 public abstract class Order
 {
+    private PhysicalProductOrder physicalProductOrder = new PhysicalProductOrder();
     public Customer customer { get; set; }
     public Product product { get; set; }
     public int Quantity { get; set; }
@@ -23,7 +24,7 @@ public abstract class Order
 
     public virtual void ApplyDiscount(IDiscount discount)
     {
-        Discount = discount.CalculateDiscount(product.Price * Quantity);
+        Discount = discount.CalculateDiscount(physicalProductOrder._orderItems ,product.Price * Quantity);
     }
 
     public abstract void CompleteOrder();

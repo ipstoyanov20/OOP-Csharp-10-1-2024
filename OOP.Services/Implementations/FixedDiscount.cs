@@ -10,8 +10,15 @@ public class FixedDiscount : IDiscount
 
     public decimal Amount { get; }
 
-    public decimal CalculateDiscount(decimal total)
+    public decimal CalculateDiscount(List<OrderItem> orderItems, decimal discountPercentage)
     {
-        return Math.Min(Amount, total);
+        decimal totalPrice = 0;
+        foreach (OrderItem item in orderItems)
+        {
+            totalPrice += item.Product.Price * item.Quantity;
+        }
+
+        decimal discountAmount = totalPrice * discountPercentage / 100;
+        return discountAmount;
     }
 }

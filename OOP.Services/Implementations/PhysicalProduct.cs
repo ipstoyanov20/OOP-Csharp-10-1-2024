@@ -13,6 +13,7 @@ public class PhysicalProduct
     public int Quantity { get; set; }
 
     public event EventHandler<string> OutOfStock;
+    
 
     public void DecreaseQuantity(int amount)
     {

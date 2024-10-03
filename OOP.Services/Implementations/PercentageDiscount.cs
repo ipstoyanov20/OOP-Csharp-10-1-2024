@@ -9,7 +9,7 @@ public class PercentageDiscount : IDiscount
 
     public int Percentage { get; }
 
-    public decimal CalculateDiscount(decimal total)
+    public decimal CalculateDiscount(List<OrderItem> orderItems, decimal total)
     {
         return total * (Percentage / 100.0m);
     }

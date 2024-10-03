@@ -4,7 +4,12 @@ namespace Data.Models;
 
 public class Product
 {
-    public string Name { get; set; }
-    public string Type { get; set; }
-    public decimal Price { get; set; }
+    // public PhysicalProduct Product { get; set; }
+    // public int Quantity { get; set; }
+    //
+    // public Product(PhysicalProduct product, int quantity)
+    // {
+    //     Product = product;
+    //     Quantity = quantity;
+    // }
 }
